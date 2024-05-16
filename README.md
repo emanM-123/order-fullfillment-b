@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Shopify App Template - Remix
 
 This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using the [Remix](https://remix.run) framework.
@@ -301,3 +302,6 @@ This template uses [Remix](https://remix.run). The following Shopify tools are a
 - [App extensions](https://shopify.dev/docs/apps/app-extensions/list)
 - [Shopify Functions](https://shopify.dev/docs/api/functions)
 - [Getting started with internationalizing your app](https://shopify.dev/docs/apps/best-practices/internationalization/getting-started)
+=======
+# order-fullfillment-b
+>>>>>>> e790cd9dcdfea9fbd4a8601782549d1e7d99d88d
