@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "3000f8962d40be5ec4b4c1ad045e5bc3"
+name = "partial-payment"
+handle = "partial-payment-12"
+application_url = "https://cycle-english-corner-restoration.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "https-b20d7c-30.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders,write_orders, read_assigned_fulfillment_orders, write_assigned_fulfillment_orders, read_checkouts, write_checkouts, read_draft_orders, write_draft_orders, read_fulfillments, write_fulfillments, read_payment_mandate, write_payment_mandate, read_payment_terms, write_payment_terms, read_price_rules, write_price_rules, read_shopify_payments_disputes, read_shopify_payments_payouts"
+
+[auth]
+redirect_urls = [
+  "https://cycle-english-corner-restoration.trycloudflare.com/auth/callback",
+  "https://cycle-english-corner-restoration.trycloudflare.com/auth/shopify/callback",
+  "https://cycle-english-corner-restoration.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[app_proxy]
+url = "https://cycle-english-corner-restoration.trycloudflare.com/partia-payment"
+subpath = "order"
+prefix = "a"
+
+[pos]
+embedded = true

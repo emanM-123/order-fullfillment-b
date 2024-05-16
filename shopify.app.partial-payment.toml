@@ -1,0 +1,34 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "3000f8962d40be5ec4b4c1ad045e5bc3"
+name = "partial-payment"
+handle = "partial-payment-12"
+application_url = "https://extreme-during-verde-ge.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "https-b20d7c-30.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_all_orders,read_assigned_fulfillment_orders,read_checkouts,read_draft_orders,read_fulfillments,read_orders,read_price_rules,write_assigned_fulfillment_orders,write_checkouts,write_draft_orders,write_fulfillments,write_orders,write_price_rules"
+
+[auth]
+redirect_urls = [
+  "https://extreme-during-verde-ge.trycloudflare.com/auth/callback",
+  "https://extreme-during-verde-ge.trycloudflare.com/auth/shopify/callback",
+  "https://extreme-during-verde-ge.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[app_proxy]
+url = "https://extreme-during-verde-ge.trycloudflare.com/partia-payment"
+subpath = "order"
+prefix = "a"
+
+[pos]
+embedded = true
